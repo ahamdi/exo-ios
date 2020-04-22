@@ -751,6 +751,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				fr,
@@ -1253,7 +1254,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BASE_URL = "https://community.exoplatform.com";
 				APP_BUNDLE_ID = com.exoplatform.mob.eXoPlatformiPHone;
-				APP_DISPLAY_NAME = eXo;
+				APP_DISPLAY_NAME = Meeds;
 				APP_ENV_NAME = PROD;
 				APP_PROV_PROFIL = "match AdHoc com.exoplatform.mob.eXoPlatformiPHone";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1292,7 +1293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1311,7 +1312,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_BASE_URL = "https://community.exoplatform.com";
 				APP_BUNDLE_ID = com.exoplatform.mob.eXoPlatformiPHone;
-				APP_DISPLAY_NAME = eXo;
+				APP_DISPLAY_NAME = Meeds;
 				APP_ENV_NAME = PROD;
 				APP_PROV_PROFIL = "match AdHoc com.exoplatform.mob.eXoPlatformiPHone";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1344,7 +1345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
