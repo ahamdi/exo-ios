@@ -1252,7 +1252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BASE_URL = "https://community.exoplatform.com";
+				APP_BASE_URL = "http://192.168.5.9";
 				APP_BUNDLE_ID = com.exoplatform.mob.eXoPlatformiPHone;
 				APP_DISPLAY_NAME = Meeds;
 				APP_ENV_NAME = PROD;
@@ -1310,7 +1310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_BASE_URL = "https://community.exoplatform.com";
+				APP_BASE_URL = "http://192.168.5.9";
 				APP_BUNDLE_ID = com.exoplatform.mob.eXoPlatformiPHone;
 				APP_DISPLAY_NAME = Meeds;
 				APP_ENV_NAME = PROD;
