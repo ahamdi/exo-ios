@@ -17,12 +17,12 @@
 
 import UIKit
 
-class AppEnvironment: NSObject {
+class AppEnv: NSObject {
 
     // MARK: Properties
 
     // MARK: Shared Instance
-    static let sharedInstance: AppEnvironment = AppEnvironment()
+    static let sharedInstance: AppEnv = AppEnv()
 
     // MARK: Inits
     override private init() {
@@ -36,7 +36,7 @@ class AppEnvironment: NSObject {
         return string
     }
 
-    static func baseServerURL() -> String {
+    func baseServerURL() -> String {
         guard let baseURL = Bundle.main.object(forInfoDictionaryKey:"APP_BASE_URL") as? String else {
             fatalError("The environnement variable is not defined, please update plist for key APP_BASE_URL")
         }
@@ -46,7 +46,7 @@ class AppEnvironment: NSObject {
     static func logInfo() {
         debugPrint("==============================")
         debugPrint("Environment INFOS")
-        debugPrint("baseUrl = \(AppEnvironment.baseURL())")
+        debugPrint("baseUrl = \(sharedInstance.baseServerURL())")
         debugPrint("==============================")
     }
 }

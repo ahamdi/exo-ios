@@ -294,7 +294,20 @@ enum {
 
 NSMutableData * data;
 -(void) login {
-	if ([AccountManager sharedManager].selectedAccount && [AccountManager sharedManager].selectedAccount.password.length>0){
+    
+    // Get server base URL from Main application bundle and initialize
+    // the selectedAccount and allAccounts to be used to select
+    // only one account for the current server when sharing files from iOS
+    NSBundle * bundle = [NSBundle mainBundle];
+    if([[bundle.bundleURL pathExtension] isEqualToString:@"appex"]){
+        bundle = [NSBundle bundleWithURL:[[bundle.bundleURL URLByDeletingLastPathComponent] URLByDeletingLastPathComponent]];
+    }
+    NSString * baseURL = [bundle objectForInfoDictionaryKey:@"APP_BASE_URL"];
+    [AccountManager sharedManager].selectedAccount = [Account alloc];
+    [AccountManager sharedManager].selectedAccount.serverURL = baseURL;
+    [AccountManager sharedManager].allAccounts[0] = [AccountManager sharedManager].selectedAccount;
+	
+    if ([AccountManager sharedManager].selectedAccount && [AccountManager sharedManager].selectedAccount.password.length > 0){
 		NSURLSessionConfiguration *sessionConfig =
 		[NSURLSessionConfiguration defaultSessionConfiguration];
 		
