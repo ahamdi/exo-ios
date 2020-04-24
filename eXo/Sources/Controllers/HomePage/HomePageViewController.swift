@@ -31,6 +31,7 @@ class HomePageViewController: eXoWebBaseController, WKNavigationDelegate, WKUIDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.serverURL = AppEnvironment.baseURL()
         self.setupWebView(self.webViewContainer)
         webView?.navigationDelegate = self
         webView?.uiDelegate = self
@@ -66,7 +67,7 @@ class HomePageViewController: eXoWebBaseController, WKNavigationDelegate, WKUIDe
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     // MARK: Actions
@@ -124,9 +125,6 @@ class HomePageViewController: eXoWebBaseController, WKNavigationDelegate, WKUIDe
         Request to /rest/state/status to check if user has connected?: 300> status code >=200 --> Connected
         */
         if response.url?.absoluteString.range(of: serverDomain!+"/rest/state/status") != nil  {
-            if (response.statusCode >= 200  && response.statusCode < 300) {
-                self.showOnBoardingIfNeed()
-            }
             decisionHandler(.cancel)
             return
         }
@@ -206,7 +204,7 @@ class HomePageViewController: eXoWebBaseController, WKNavigationDelegate, WKUIDe
     - The view has never been shown
     - After use has logged in
     */
-    func showOnBoardingIfNeed () {
+    /*func showOnBoardingIfNeed () {
         if (UserDefaults.standard.object(forKey: Config.onboardingDidShow) == nil){
             let welcomeVC:WelcomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
             welcomeVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
@@ -214,7 +212,7 @@ class HomePageViewController: eXoWebBaseController, WKNavigationDelegate, WKUIDe
             self.present(welcomeVC, animated: true, completion: {})
             UserDefaults.standard.set(NSNumber(value: true as Bool), forKey: Config.onboardingDidShow)
         }
-    }
+    }*/
     
     /*
     Ask to load the page <serverURL>/rest/state/status 

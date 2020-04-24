@@ -31,9 +31,7 @@ class LoginViewController: UITableViewController {
             defaultServer = Server(serverURL: Config.communityURL)
         }
         self.tableView.reloadData()
-        // the navigation controller is alway shown in this screen
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationItem.title = NSLocalizedString("OnBoarding.Title.SignInToeXo", comment:"")
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     /*
