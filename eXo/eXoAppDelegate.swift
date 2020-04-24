@@ -48,6 +48,7 @@ class eXoAppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNU
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Start Crashlytics
         Fabric.with([Crashlytics.self])
+        AppEnvironment.logInfo()
         // Get the root view (the enter point of storyboard)
         navigationVC = self.window!.rootViewController as? UINavigationController
         // Push notifications
