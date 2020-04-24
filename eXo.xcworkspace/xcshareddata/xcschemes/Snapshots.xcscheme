@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C3AD2451BCF56900094CFF9"
-               BuildableName = "eXo.app"
+               BuildableName = "Meeds.app"
                BlueprintName = "eXo"
                ReferencedContainer = "container:eXo.xcodeproj">
             </BuildableReference>
@@ -69,6 +69,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9C3AD2451BCF56900094CFF9"
+            BuildableName = "Meeds.app"
+            BlueprintName = "eXo"
+            ReferencedContainer = "container:eXo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -85,17 +94,6 @@
             </LocationScenarioReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C3AD2451BCF56900094CFF9"
-            BuildableName = "eXo.app"
-            BlueprintName = "eXo"
-            ReferencedContainer = "container:eXo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -112,13 +110,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C3AD2451BCF56900094CFF9"
-            BuildableName = "eXo.app"
+            BuildableName = "Meeds.app"
             BlueprintName = "eXo"
             ReferencedContainer = "container:eXo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -130,7 +126,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C3AD2451BCF56900094CFF9"
-            BuildableName = "eXo.app"
+            BuildableName = "Meeds.app"
             BlueprintName = "eXo"
             ReferencedContainer = "container:eXo.xcodeproj">
          </BuildableReference>

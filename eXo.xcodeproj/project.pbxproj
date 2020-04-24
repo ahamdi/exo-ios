@@ -70,6 +70,7 @@
 		B5C7335C201F1D0800A2EA71 /* PushTokenRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7335B201F1D0800A2EA71 /* PushTokenRestClient.swift */; };
 		B5C7335F201F266800A2EA71 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7335E201F266800A2EA71 /* StringExtension.swift */; };
 		B5C73362201F32B700A2EA71 /* CookiesInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C73361201F32B700A2EA71 /* CookiesInterceptor.swift */; };
+		D736CC392451A36600B4E960 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D736CC382451A36600B4E960 /* AppEnvironment.swift */; };
 		F270FB83B60AC70D8B45093A /* Pods_share_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F604E8A56F9C9304EA5286 /* Pods_share_extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,7 +152,7 @@
 		9C18EBBD1C3124DC00A75DD8 /* TableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		9C18EBBF1C3124ED00A75DD8 /* TableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 		9C18EC131C34DC8B00A75DD8 /* TestServerSelectScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServerSelectScreen.swift; sourceTree = "<group>"; };
-		9C3AD2461BCF56900094CFF9 /* eXo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eXo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3AD2461BCF56900094CFF9 /* eXo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = eXo.app; path = Meeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3AD2491BCF56900094CFF9 /* eXoAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eXoAppDelegate.swift; sourceTree = "<group>"; };
 		9C3AD24E1BCF56900094CFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C3AD2501BCF56900094CFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,6 +217,7 @@
 		B5C73361201F32B700A2EA71 /* CookiesInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookiesInterceptor.swift; sourceTree = "<group>"; };
 		D206C018F830186C99982959 /* Pods-eXo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eXo.release.xcconfig"; path = "Pods/Target Support Files/Pods-eXo/Pods-eXo.release.xcconfig"; sourceTree = "<group>"; };
 		D39BBBFBA9CFC4A211C1FFC7 /* Pods-eXoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eXoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eXoUITests/Pods-eXoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D736CC382451A36600B4E960 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		F8133069F7CAB26385260E0B /* Pods-eXoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eXoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eXoTests/Pods-eXoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -439,6 +441,7 @@
 		9C3AD2781BCF5D6E0094CFF9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D736CC372451A2F800B4E960 /* AppEnvironment */,
 				9C3AD2851BCF9E570094CFF9 /* defines.swift */,
 				9C3AD2791BCF5D6E0094CFF9 /* Controllers */,
 				9C3AD27A1BCF5D6E0094CFF9 /* Models */,
@@ -582,6 +585,14 @@
 				B56257E6202AD9AB00A6CE41 /* CookiesFromAuthorizationFetcher.swift */,
 			);
 			path = Cookies;
+			sourceTree = "<group>";
+		};
+		D736CC372451A2F800B4E960 /* AppEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				D736CC382451A36600B4E960 /* AppEnvironment.swift */,
+			);
+			path = AppEnvironment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1058,6 +1069,7 @@
 				9C032E311BE897CE006F0577 /* LoginViewController.swift in Sources */,
 				9C032E501BF34BF1006F0577 /* ServerEditViewController.swift in Sources */,
 				9C3AD2881BCFA3400094CFF9 /* Server.swift in Sources */,
+				D736CC392451A36600B4E960 /* AppEnvironment.swift in Sources */,
 				9C032E381BEA1495006F0577 /* eXoWebBaseViewController.swift in Sources */,
 				9C3AD2841BCF9D2D0094CFF9 /* ServerSelectionViewController.swift in Sources */,
 				B5C7335A201F1B0700A2EA71 /* PushTokenSynchronizer.swift in Sources */,
